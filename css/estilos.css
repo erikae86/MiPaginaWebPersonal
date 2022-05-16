@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1300;1400;1500;1600;1700;1800;1900 & mostrar=intercambiar');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-style: bold;
+	font-size: 4.4rem;
+	letter-spacing: 1,5px;
+	color: #528B85;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Dancing Script', cursive;
+	font-style: normal;
+	font-size: 2.2rem;
+	letter-spacing: 1,5px;
+	color: #528B85;
+}
+
+h3{
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+
+}
+
+h4{
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+
+}
+
+ul{
+	list-style: none;
+
+}
+
+
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	color: white;
+}
+
+
+/* SECCION MENÙ NAVEGACION*/
+
+
+.header{
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	transition: all 250ms;
+	}
+
+.header:hover{
+	height: 4rem;
+}
+
+.header a{
+	color: #272727;
+	text-decoration: none;
+	list-style: none;
+}
+
+.header a:hover{
+	background: #F67D83;
+	color: #272727;
+	padding: 10px 20px;
+	border-radius: 18px;
+	transition: ease-in .2s;
+}
+
+.header__home{
+	float: left;
+}
+
+.header__nav{
+	list-style-type: none;
+}
+
+.header__nav li{
+	display: inline-block;
+	margin-left: 3rem;
+}
+
+
+/* SECCION PORTADA - HOME*/
+
+
+
+.hero {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.hero__img{
+	width: 50%;
+	padding: 80px;
+	align-items: center;
+
+}
+
+.hero__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: white;
+	letter-spacing: 11%;
+	align-items: center;
+}
+
+.hero__text li::before {
+	content:'' ;
+	text-align: justify-all;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../assets/img/Frame121.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-right: .5em;
+	margin-top: .7em;
+}
+
+
+/* SECCION SOBRE MI */
+
+.tituloPrincipal{
+	text-align: center;
+}
+
+.sobre{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.sobre__img {
+	width: 30vw;
+	margin: 80px;
+	padding: 50px;
+
+}
+
+.sobre__name{
+	justify-content: left;
+	padding: 30px;
+	justify-content: space-between;
+}
+
+
+.sobre__name p{
+	width: 90%;
+	margin-top: 30px;
+	
+}
+.eri {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 0,2px;
+	color: #F45F67;
+}
+.lopez {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: transparent ;
+	 -webkit-text-stroke: .7px;
+	 -webkit-text-stroke-color: #F45F67;
+	letter-spacing: 1,5px;
+}
+
+/* HABILIDADES*/
+
+.titulo{
+	text-align: center;
+	margin-top: 50px;
+}
+.habi {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.habi__card{
+	width: 9.4rem;
+}
+
+.habi__card img{
+	width:4.4rem;
+}
+ 
+.habi__card h3{
+	color: #F5CE46;
+}
+
+
+/* EDUCACION */
+
+#containerGrid{
+	width: 50%;
+	margin: 3rem auto;
+	display: grid;
+	grid-template-columns: 1.8rem 1fr 1fr;
+	grid-template-rows: repeat(10, 1fr);
+	row-gap: 20px;
+}
+
+/* SECCION SERVICIO */
+
+.container_grid_serv{
+	width: 90%;
+	margin: 3rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	align-items: center;
+
+}
+
+.container_grid_serv h3{
+	color: #F5CE46;
+}
+
+.container_grid_serv img{
+	width: 50hv;
+}
+
+.container_metodo{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	text-align: center;
+	justify-content:space-around;
+}
+
+.container_metodo img{
+	width: 3.75rem;
+
+}
+
+/*FOOTER*/
+
+
+.containerFooter{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	width: 100%;
+
+}
+
+.containerFooter a{
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+
+.redes a::before {
+	content:'' ;
+	text-align: justify-all;
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-right: .3em;
+	margin-top: .3em;
+}
+
+.redes1 a::before{
+	background-image: url("../assets/img/icbehance.png");
+}
+
+.redes2 a::before{
+	background-image: url("../assets/img/iclinkedin.png");
+}
+
+.redes3 a::before{
+	background-image: url("../assets/img/icwhatsapp.png");
+}
+
+.redes4 a::before{
+	background-image: url("../assets/img/icinstagram.png");
+}
+
+.redes5 a::before{
+	background-image: url("../assets/img/icemail.png");
+}
+
+ .derechos{
+ 	position: static;
+ 	text-align: center;
+ 	bottom: 0%;
+ 	padding: 2rem;
+ }
+
+
+
+
+
+
+
+
+
