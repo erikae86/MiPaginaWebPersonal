@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Formulario contacto</title>
+</head>
+<body>
+<!--SECCION MENÙ NAVEGACION-->
+	<header>
+		<nav>
+			<div class="header">
+				<div class="header__home">
+					<span class="home"><a href="../primer_html_erika/index.html">Home</a></span>
+				</div >
+
+				<div class="header__nav">
+				<ul class="menutotal">
+					
+					<li><a href="./sobre_mi.html">Sobre mi</a></li>
+					<li><a href="./portafolio.html">Mi portafolio</a></li>
+					<li><a href="./servicios.html">Servicios</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+		<h2>Formulario de contacto</h2>
+
+	<form action="contacto.html" method="GET" enctype="multipart/form-data">
+		<div>
+			<label for="text">Nombre y apellido</label>
+			<input type="text" name="nombreyapellido" id="text" placeholder="Ej: Pedro Perez">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="emailcontacto" id="email" placeholder="Ej:pedro88@gmail.com">
+		</div>
+		
+		<div>
+			<label for="number">Celular</label>		
+			<input type="number" name="celular" required max="10" id="number" placeholder="Ej:1155666655">
+		</div>
+		<div>
+			<textarea name="mensaje" id="" cols="30" rows="10">Escriba su consulta</textarea><br>
+			<input type="submit" name="enviar" value="ENVIAR">
+		</div>
+	</form>
+
+	<footer>
+		<p>Todos los derechos reservador</p>
+		<p>Creado por Erika López 2022</p>
+	</footer>
+
+</body>
+</html>
